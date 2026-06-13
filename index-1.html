@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>São Paulo 2026 — Missão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="hero-img-wrap">
+      <img src="img1.jpg" alt="Equipe SP2026" class="hero-bg" id="heroBg" />
+      <div class="hero-overlay"></div>
+      <div class="hero-scanlines"></div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-logo">SP<span>2026</span></div>
+      <div class="nav-tag">MISSÃO ATIVA</div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot pulse"></span>
+        CONTAGEM REGRESSIVA INICIADA
+      </div>
+      <h1 class="hero-title">
+        SÃO<br/>
+        <span class="glow-text">PAULO</span><br/>
+        <span class="year-tag">2026</span>
+      </h1>
+      <p class="hero-sub">Uma jornada construída por amizade, sonhos e muitas ideias.</p>
+
+      <!-- Countdown -->
+      <div class="countdown" id="countdown">
+        <div class="cd-card" id="cd-days">
+          <div class="cd-val">--</div>
+          <div class="cd-label">DIAS</div>
+          <div class="cd-border"></div>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-card" id="cd-hours">
+          <div class="cd-val">--</div>
+          <div class="cd-label">HORAS</div>
+          <div class="cd-border"></div>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-card" id="cd-minutes">
+          <div class="cd-val">--</div>
+          <div class="cd-label">MIN</div>
+          <div class="cd-border"></div>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-card" id="cd-seconds">
+          <div class="cd-val">--</div>
+          <div class="cd-label">SEG</div>
+          <div class="cd-border"></div>
+        </div>
+      </div>
+
+      <div class="arrived-msg" id="arrivedMsg">
+        Chegou o grande dia! ✈️
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="section">
+    <div class="section-header reveal">
+      <div class="eyebrow">// REGISTROS DA JORNADA</div>
+      <h2>A Equipe em Ação</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" style="--delay:0s">
+        <img src="img1.jpg" alt="Vitória" />
+        <div class="gallery-overlay">
+          <div class="gallery-tag">VITÓRIA</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:.1s">
+        <img src="img3.jpg" alt="União" />
+        <div class="gallery-overlay">
+          <div class="gallery-tag">UNIÃO</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:.2s">
+        <img src="img4.jpg" alt="Preparação" />
+        <div class="gallery-overlay">
+          <div class="gallery-tag">PREPARAÇÃO</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:.3s">
+        <img src="img2.jpg" alt="Momento" />
+        <div class="gallery-overlay">
+          <div class="gallery-tag">MOMENTO</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section id="team" class="section">
+    <div class="section-header reveal">
+      <div class="eyebrow">// A EQUIPE</div>
+      <h2>Três Mentes, Uma Missão</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal" style="--delay:0s">
+        <div class="team-icon">✦</div>
+        <div class="team-name">Lucca Romano</div>
+        <div class="team-role">Visionário</div>
+        <p>Transforma ideias em realidade com precisão e criatividade fora do comum.</p>
+      </div>
+      <div class="team-card reveal" style="--delay:.15s">
+        <div class="team-icon">◈</div>
+        <div class="team-name">Áttila</div>
+        <div class="team-role">Estrategista</div>
+        <p>Conecta pessoas, oportunidades e sonhos com uma energia inigualável.</p>
+      </div>
+      <div class="team-card reveal" style="--delay:.3s">
+        <div class="team-icon">⬡</div>
+        <div class="team-name">Brahyan</div>
+        <div class="team-role">Inovador</div>
+        <p>Pensa diferente, age com coragem e nunca deixa a equipe parar de crescer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION ============ -->
+  <section id="mission" class="section">
+    <div class="mission-inner reveal">
+      <div class="eyebrow">// MISSÃO SÃO PAULO</div>
+      <h2>Objetivo da Missão</h2>
+      <p class="mission-desc">Participar de eventos, conhecer pessoas, aprender, inovar e viver experiências inesquecíveis.</p>
+      <div class="mission-grid">
+        <div class="mission-item">
+          <div class="m-icon">🎯</div>
+          <div class="m-label">Eventos</div>
+        </div>
+        <div class="mission-item">
+          <div class="m-icon">🤝</div>
+          <div class="m-label">Conexões</div>
+        </div>
+        <div class="mission-item">
+          <div class="m-icon">💡</div>
+          <div class="m-label">Inovação</div>
+        </div>
+        <div class="mission-item">
+          <div class="m-icon">🚀</div>
+          <div class="m-label">Crescimento</div>
+        </div>
+        <div class="mission-item">
+          <div class="m-icon">🌆</div>
+          <div class="m-label">Experiências</div>
+        </div>
+        <div class="mission-item">
+          <div class="m-icon">⚡</div>
+          <div class="m-label">Energia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="timeline" class="section">
+    <div class="section-header reveal">
+      <div class="eyebrow">// LINHA DO TEMPO</div>
+      <h2>A Rota da Missão</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal" style="--delay:0s">
+        <div class="tl-dot"><span>01</span></div>
+        <div class="tl-body">
+          <div class="tl-icon">💭</div>
+          <h3>Ideia da Viagem</h3>
+          <p>Tudo começa com uma conversa entre amigos e um sonho em comum.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal" style="--delay:.1s">
+        <div class="tl-dot"><span>02</span></div>
+        <div class="tl-body">
+          <div class="tl-icon">📋</div>
+          <h3>Planejamento</h3>
+          <p>Roteiros, datas, logística — cada detalhe pensado com cuidado.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal" style="--delay:.2s">
+        <div class="tl-dot completed"><span>03</span></div>
+        <div class="tl-body">
+          <div class="tl-icon">✅</div>
+          <h3>Vakinha Concluída</h3>
+          <p>Meta batida. A equipe mostrou que quando quer, consegue.</p>
+          <div class="tl-badge">CONCLUÍDO</div>
+        </div>
+      </div>
+      <div class="tl-item reveal" style="--delay:.3s">
+        <div class="tl-dot"><span>04</span></div>
+        <div class="tl-body">
+          <div class="tl-icon">🎒</div>
+          <h3>Preparação</h3>
+          <p>Malas prontas, energia no máximo, olhos no destino.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal" style="--delay:.4s">
+        <div class="tl-dot"><span>05</span></div>
+        <div class="tl-body">
+          <div class="tl-icon">✈️</div>
+          <h3>Embarque</h3>
+          <p>05 de agosto de 2026. O momento que tudo isso valeu a pena.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal" style="--delay:.5s">
+        <div class="tl-dot future"><span>06</span></div>
+        <div class="tl-body">
+          <div class="tl-icon">🏙️</div>
+          <h3>São Paulo</h3>
+          <p>A maior cidade do país. A missão começa aqui.</p>
+          <div class="tl-badge future-badge">EM BREVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section id="quote" class="section">
+    <div class="quote-wrap reveal">
+      <div class="quote-line"></div>
+      <blockquote>
+        "Grandes jornadas não começam quando o avião decola. Elas começam quando alguém acredita que é possível."
+      </blockquote>
+      <div class="quote-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">SP<span>2026</span></div>
+      <p>São Paulo 2026 • Construído por amigos, movido por sonhos.</p>
+      <div class="footer-glow"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
